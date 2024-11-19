@@ -1,0 +1,89 @@
+.main{
+    min-width: 344px;
+    min-height: 188px;
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+    border-radius: 10px;
+    padding: 1rem;
+}
+h1{
+    font-size: 1.5rem;
+    text-align: center;
+}
+.yellow{
+    color: chocolate;
+}
+p{
+    font-size: 0.75rem;
+    text-align: center;
+}
+.button{
+    background-color: aqua;
+    position: relative;
+    height: 2rem;
+    width: 4rem;
+    border-radius: 25px;
+    transition: 1s;
+    cursor: pointer;
+}
+.half{
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+.circle{
+    position: absolute;
+    background-color: pink;
+    top: 0;
+    left: 0;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: 1s;
+}
+#left{
+    left: 5px;
+}
+#right{
+    right: 5px;
+    text-align: right;
+}
+@keyframes change{
+    0%{
+        background-color: aqua;
+    }
+    100%{
+        background-color: coral;
+    }
+}
+@keyframes changeviceversa {
+    0%{
+        background-color: coral;
+    }
+    100%{
+        background-color: aqua;
+    }
+}
+@keyframes movementright {
+    0%{
+        left: 0;
+        transform: translateX(0);
+    }
+    100%{
+        left: 100%;
+        transform: translateX(-100%);
+    }
+}
+@keyframes movementleft {
+    0%{
+        left: 100%;
+        transform: translateX(-100%);
+    }
+    100%{
+        left: 0;
+        transform: translateX(0);
+    }
+}
